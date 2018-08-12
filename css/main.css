@@ -1,0 +1,44 @@
+@import url(reset.css);
+@import url(font.css);
+
+.body {
+    background-color: #fff;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-link {
+    display: block;
+    color: #868686;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    line-height: 2em;
+}
+
+.menu-link:hover {
+    color: #fff; 
+    background-color: #ffbb42;
+    text-decoration: none;
+}
