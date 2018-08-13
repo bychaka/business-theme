@@ -67,16 +67,31 @@
 
 .banner-wrap {
     background-color: #709dca;
+    background-image: linear-gradient(to bottom, #709dca 75%, #fff 75%);
 }
 
 .banner {
     padding: 110px 0 280px 0;
     display: flex;
-    justify-content: center;
-    
     flex-direction: column;
 }
 
 .form-quote {
     margin: 30px auto;
+}
+
+.slider {
+    margin: 0 auto;
+}
+
+.slider-link {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: 2px solid #dedfe0;
+    border-radius: 11px;
+}
+
+.slider-link:active, .slider-link:hover {
+    border-color: #1ca8dd;
 }
