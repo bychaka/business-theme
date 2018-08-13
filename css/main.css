@@ -2,6 +2,10 @@
 @import url(font.css);
 
 .body {
+    font-family: Arial, sans-serif;
+}
+
+.body {
     background-color: #fff;
 }
 
@@ -12,11 +16,27 @@
 .col {
     margin: 0 auto;
     width: 1170px;
-    padding: 0 15px;
 }
 
+.section-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.section-header-text {
+    font-size: 12px;
+    color: #fff;
+    
+    margin: 0 auto;
+}
+
+
+
 .header {
-    padding: 22px 0;
+    padding: 22px 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -24,6 +44,7 @@
 .menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .menu-link {
@@ -34,11 +55,28 @@
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 3px;
-    line-height: 2em;
 }
 
 .menu-link:hover {
     color: #fff; 
     background-color: #ffbb42;
     text-decoration: none;
+}
+
+/* banner */
+
+.banner-wrap {
+    background-color: #709dca;
+}
+
+.banner {
+    padding: 110px 0 280px 0;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+
+.form-quote {
+    margin: 30px auto;
 }
