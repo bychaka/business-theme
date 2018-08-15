@@ -1,55 +1,55 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('../font/') format('woff2'),
-        url('../font/OpenSans-Light.woff') format('woff');
+    src: url('../fonts/') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../font/Lato-Bold.woff2') format('woff2'),
-        url('../font/Lato-Bold.woff') format('woff');
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../font/Lato-Light.woff2') format('woff2'),
-        url('../font/Lato-Light.woff') format('woff');
+    src: url('../fonts/Lato-Light.woff2') format('woff2'),
+        url('../fonts/Lato-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brandon Grotesque';
-    src: url('../font/BrandonGrotesque-Bold.woff2') format('woff2'),
-        url('../font/BrandonGrotesque-Bold.woff') format('woff');
+    src: url('../fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/BrandonGrotesque-Bold.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('../font/GothamBlack.woff2') format('woff2'),
-        url('../font/GothamBlack.woff') format('woff');
+    src: url('../fonts/GothamBlack.woff2') format('woff2'),
+        url('../fonts/GothamBlack.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../font/Lato-Regular.woff2') format('woff2'),
-        url('../font/Lato-Regular.woff') format('woff');
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('../font/OpenSans.woff2') format('woff2'),
-        url('../font/OpenSans.woff') format('woff');
+    src: url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
