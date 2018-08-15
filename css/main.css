@@ -204,8 +204,8 @@ Lato Light +
 }
 
 .service-icon {
-    display: block;
-    width: 185px;
+    display: flex;
+    min-width: 70px;
     font-size: 50px;
     color: #fff;
     -webkit-text-stroke: 2px #709DCA;
@@ -236,8 +236,10 @@ Lato Light +
     2px  2px 0   #709DCA; альтернативный вариант*/ 
 }
 
-
-
+.icon-dollar {
+    display: flex;
+    justify-content: center;
+}
 
 
 
