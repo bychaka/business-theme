@@ -15,10 +15,10 @@ Lato Light +
 
 
 .body {
-    font-family: Arial, sans-serif;
-}
-
-.body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7b7b7b;
     background-color: #fff;
 }
 
@@ -33,9 +33,9 @@ Lato Light +
 }
 
 .section-header {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
-    color: #fff;
+    color: #394b50;
     text-transform: uppercase;
     margin-bottom: 5px;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
@@ -44,13 +44,11 @@ Lato Light +
 
 .section-header-text {
     font-size: 16px;
-    color: #fff;
+    color: #394b50;
     margin-bottom: 30px;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
-
-
 
 .header {
     padding: 22px 15px;
@@ -84,6 +82,10 @@ Lato Light +
 
 /* banner */
 
+.banner-header {
+    font-weight: 35px;
+}
+
 .banner-wrap {
     background-color: #709dca;
     background-image: linear-gradient(to bottom, #709dca 75%, #fff 75%);
@@ -107,6 +109,7 @@ Lato Light +
     text-align: center;
     display: inline-block;
     color: #6e6e6e;
+    font-weight: 16px;
 }
 
 .input-control {
@@ -163,4 +166,91 @@ Lato Light +
 
 .slider-link:active, .slider-link:hover {
     border-color: #1ca8dd;
+}
+
+
+/* service */
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.service-item-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.service-item {
+    width: 47%;
+    display: flex;
+    padding-bottom: 75px;
+}
+
+.service-item-header {
+    color: #394b50;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.service-item-text {
+    line-height: 22px;
+}
+
+.service-icon {
+    display: block;
+    width: 185px;
+    font-size: 50px;
+    color: #fff;
+    -webkit-text-stroke: 2px #709DCA;
+    /*text-shadow: 
+    0   -2px 0   #709DCA,
+    0   -2px 0   #709DCA,
+    0    2px 0   #709DCA,
+    0    2px 0   #709DCA,
+   -2px  0   0   #709DCA,
+    2px  0   0   #709DCA,
+   -2px  0   0   #709DCA,
+    2px  0   0   #709DCA,
+   -1px -2px 0   #709DCA,
+    1px -2px 0   #709DCA,
+   -1px  2px 0   #709DCA,
+    1px  2px 0   #709DCA,
+   -2px -1px 0   #709DCA,
+    2px -1px 0   #709DCA,
+   -2px  1px 0   #709DCA,
+    2px  1px 0   #709DCA,
+   -2px -2px 0   #709DCA,
+    2px -2px 0   #709DCA,
+   -2px  2px 0   #709DCA,
+    2px  2px 0   #709DCA,
+   -2px -2px 0   #709DCA,
+    2px -2px 0   #709DCA,
+   -2px  2px 0   #709DCA,
+    2px  2px 0   #709DCA; альтернативный вариант*/ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alt-text-color {
+    color: #fff;
 }
