@@ -40,6 +40,7 @@ Lato Light +
     margin-bottom: 5px;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
     font-weight: 900;
+    letter-spacing: -0.015em;
 }
 
 .section-header-text {
@@ -128,6 +129,7 @@ Lato Light +
     width: 200px;
     padding: 0 30px 0 10px;
     font-size: 13px;
+    color: #a9a9a9;
 }
 
 .input-btn-control {
@@ -182,12 +184,12 @@ Lato Light +
 .service-item-wrap {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: start;
     padding-top: 80px;
 }
 
 .service-item {
-    width: 47%;
+    width: 535px;
     display: flex;
     padding-bottom: 75px;
 }
@@ -200,6 +202,7 @@ Lato Light +
 }
 
 .service-item-text {
+    font-size: 13px;
     line-height: 22px;
 }
 
@@ -207,8 +210,7 @@ Lato Light +
     display: flex;
     min-width: 70px;
     font-size: 50px;
-    color: #fff;
-    -webkit-text-stroke: 2px #709DCA;
+    justify-content: center;
     /*text-shadow: 
     0   -2px 0   #709DCA,
     0   -2px 0   #709DCA,
@@ -236,15 +238,77 @@ Lato Light +
     2px  2px 0   #709DCA; альтернативный вариант*/ 
 }
 
-.icon-dollar {
-    display: flex;
-    justify-content: center;
+.service-link:hover {
+    -webkit-text-stroke: 2px #f6772c;
+}
+
+.service-link {
+    color: #fff;
+    -webkit-text-stroke: 2px #709DCA;
+}
+
+.service-info {
+    margin-left: 20px;
 }
 
 
+/* about */
 
+.about {
+    display: flex;
+    flex-direction: row;
+}
 
+.about-left, .about-right {
+    flex: 1;
+}
 
+.about-left{
+    background-image: url("../image/about-bg.jpg");
+    background-size: cover;
+}
+
+.about-right {
+    background-color: #ffc155;
+    padding: 160px 0 160px 75px;
+}
+
+.about-right > .section-header {
+    padding-bottom: 20px;
+}
+
+.about-text {
+    max-width: 534px;
+    line-height: 24px; 
+    padding-bottom: 54px;
+}
+
+.main-link {
+    display: inline-block;
+    color: #fff;
+    padding: 16px 31px;
+    background-color: #ffc155;
+    border-radius: 2px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-about {
+    box-sizing: border-box;
+    border: 1px solid #e7ad48;
+}
+
+/* price */
+
+.price {
+    padding: 135px 0 165px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -256,3 +320,6 @@ Lato Light +
 .alt-text-color {
     color: #fff;
 }
+
+
+/* href='tel:+9999999' */
