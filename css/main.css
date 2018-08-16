@@ -316,12 +316,11 @@ Lato Light +
 
 .price-item-wrap {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .price-item {
-    flex: 1;
+    width: 33.3%;
     background-color: #fff;
     padding: 55px 30px 45px 30px;
 }
@@ -332,9 +331,16 @@ Lato Light +
     margin-bottom: 25px;
 }
 
+.price-month {
+    font-size: 20px;
+    font-weight: 300px;
+    margin-bottom: 30px;
+}
+
 .price-cost {
     color: #ffbb42;
     font-weight: 700;
+    font-size: 60px;
 }
 
 .sup {
@@ -342,6 +348,7 @@ Lato Light +
 }
 
 .price-plan-item {
+    font-size: 13.5px;
     font-weight: normal;
     color: #b5bbc1;
     line-height: 40px;
