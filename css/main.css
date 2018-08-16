@@ -308,8 +308,46 @@ Lato Light +
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e7edf3;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #818b95;
+    text-transform: uppercase;
 }
 
+.price-item-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 55px 30px 45px 30px;
+}
+
+.price-plan {
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.price-cost {
+    color: #ffbb42;
+    font-weight: 700;
+}
+
+.sup {
+    vertical-align: super;
+}
+
+.price-plan-item {
+    font-weight: normal;
+    color: #b5bbc1;
+    line-height: 40px;
+    border-top: 1px solid #e2e9f0;
+    box-sizing: border-box;
+}
 
 
 
