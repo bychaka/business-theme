@@ -328,7 +328,7 @@ Lato Light +
 }
 
 .price-item {
-    width: 33.3%;
+    flex: 1;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -341,8 +341,19 @@ Lato Light +
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccd5df;
+    border-top: 1px solid #ccd5df;
+    border-bottom: 1px solid #ccd5df;
+    border-right: 1px solid #ccd5df;
     box-sizing: border-box;
+}
+
+.price-item > .price-content:first-child {
+    border-left: 1px solid #ccd5df;
+    border-radius: 2px 0 0 2px;
+}
+
+.price-content:last-child {
+    border-radius: 0 2px 2px 0;
 }
 
 .before {
@@ -419,6 +430,110 @@ Lato Light +
     margin-top: 20px;
 }
 
+/* steps */
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.step-item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0 90px 0;
+}
+
+.step-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.step-icon {
+    font-size: 72px;
+    margin-bottom: 95px;
+    
+    color: #fff;
+    -webkit-text-stroke: 2px #709DCA;
+}
+
+.step-name {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #394b50;
+    text-transform: uppercase;
+}
+
+.step-text {
+    line-height: 22px;
+}
+
+/* happy clients */
+
+.client-row {
+    background-color: #ffc155;
+}
+
+.client {
+    padding: 140px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-item-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-item {
+    width: 567px;
+    margin: 0 9px 10px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 42px 25px 52px 29px;
+}
+
+.client-icon {
+    background-color: #394b50;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.client-content {
+    width: 100%;
+    padding-left: 31px;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-text {
+    line-height: 22px;
+    margin-bottom: 29px;
+}
+
+.client-name {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #f6772c;
+    text-transform: uppercase;
+}
+
+.alt-name-color {
+    color: #99a9ae;
+}
+
 
 
 
@@ -427,6 +542,7 @@ Lato Light +
 .alt-text-color {
     color: #fff;
 }
+
 
 
 /* href='tel:+9999999' */
