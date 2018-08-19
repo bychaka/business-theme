@@ -147,6 +147,16 @@ Lato Light +
     outline: none;
 }
 
+.input-btn-control:hover {
+    cursor: pointer;
+}
+
+.input-text-control:focus::-webkit-input-placeholder,
+.input-text-control:focus::-moz-placeholder,
+.input-text-control:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -492,23 +502,30 @@ Lato Light +
 
 .client-item-wrap {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .client-item {
     width: 567px;
-    margin: 0 9px 10px 0;
+    margin: 0 35px 10px 0;
     background-color: #fff;
     display: flex;
-    flex-direction: column;
-    padding: 42px 25px 52px 29px;
+    flex-direction: row;
+    padding: 42px 35px 52px 29px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.client-item:nth-child(even) {
+    margin-right: 0;
 }
 
 .client-icon {
     background-color: #394b50;
     height: 120px;
-    width: 120px;
-    border-radius: 60px;
+    min-width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .client-content {
@@ -535,7 +552,31 @@ Lato Light +
 }
 
 
+/* newsletter */
 
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 20px 0;
+}
+
+
+.form-subscribe {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.alt-input-control {
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-subscribe > .input-btn-control {
+    height: 47px;
+}
 
 
 
