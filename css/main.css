@@ -574,9 +574,108 @@ Lato Light +
     box-sizing: border-box;
 }
 
+.subs-input-name {
+    width: 232px;
+}
+
+.subs-input-mail {
+    width: 308px;
+}
+
 .form-subscribe > .input-btn-control {
     height: 47px;
+    padding: 0 50px;
 }
+
+
+/* map */
+
+.map {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../image/map-bg.png);
+    background-size: cover;
+}
+
+.address {
+    height: 279px;
+    width: 279px;
+    border-radius: 50%;
+    background-color: #394b50;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.address::after {
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;
+    border-top: 12px solid #394b50;
+    left: 128px;
+    bottom: -23px;
+}
+
+.header-address {
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.address-text {
+    color: #aeb7ba;
+    line-height: 24px;
+    text-align: center;
+}
+
+.address-link {
+    color: #aeb7ba;
+    text-decoration: none;
+}
+
+.alt-address-link {
+    color: #ffbb42;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #709dca;
+    line-height: 24px;
+    padding: 12px 0;
+}
+
+
+
+
+
+
 
 
 
