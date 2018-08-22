@@ -734,11 +734,14 @@ Lato Light +
     color: #aeb7ba;
     line-height: 24px;
     text-align: center;
+    word-wrap: break-word;
+    width: 130px;
 }
 
 .address-link {
     color: #aeb7ba;
     text-decoration: none;
+    line-height: 24px;
 }
 
 .alt-address-link {
