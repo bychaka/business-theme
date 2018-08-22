@@ -164,6 +164,53 @@ Lato Light +
     padding-bottom: 24px;
 }
 
+.content-slider {
+    position: relative;
+    width: 647px;
+    height: 343px;
+    background-image: url(../image/slider-template.png);
+    overflow: hidden;
+}
+
+#content-inner {
+    position: absolute;
+    top: 18px;
+    left: 102px;
+    width:10000px;
+    height: 343px;
+    }
+
+.page {
+    width: 647px;
+    height: 343px;
+    float: left;
+}
+
+#content-inner-1:target #content-inner {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+    margin-left: 0px;
+}
+
+#content-inner-2:target #content-inner {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+    margin-left: -647px;
+}
+
+#content-inner-3:target #content-inner {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+    margin-left: -1294px;
+}
+
+
 .slider-nav {
     padding: 24px 0;
 }
@@ -609,19 +656,18 @@ Lato Light +
 .alt-input-control {
     border: 1px solid #cbcbcb;
     border-radius: 2px;
-    box-sizing: border-box;
 }
 
 .alt-input-control > .input-text-control {
-    height: 46px;
+    height: 45px;
 }
 
 .subs-input-name {
-    width: 232px;
+    width: 230px;
 }
 
 .subs-input-mail {
-    width: 308px;
+    width: 306px;
 }
 
 .form-subscribe > .input-btn-control {
