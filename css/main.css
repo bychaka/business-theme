@@ -164,6 +164,22 @@ Lato Light +
     padding-bottom: 24px;
 }
 
+
+@keyframes slider {
+    0% { left: 0%; }
+    25% { left: 0%; }
+
+    33.3% { left: -100%; }
+    38.3% { left: -100%; }
+    58.3% { left: -100%; }
+
+    66.6% { left: -200%; }
+    71.6% { left: -200%; }
+    91.6% { left: -200%; }
+    
+    100% { left: 0%; }
+}
+
 .slider-content-wrap {
     position: relative;
     width: 647px;
@@ -176,51 +192,17 @@ Lato Light +
     width: 445px;
     height: 264px;
     overflow: hidden;
-    position: relative;
-    /* z-index: 9999; */
 }
 
+.slider-control {
+    width: 300%;
+    position: relative;
+	animation: 9s slider infinite;
+}
 
-#content-inner {
-    width:10000px;
-    height: 264px;
-    }
-
-.page {
-    width: 445px;
-    height: 264px;
+.slider-image {
     float: left;
 }
-
-#page1, #page2, #page3 {
-    background-image: url("../image/slider-image.jpg");
-    background-size: cover;
-}
-
-#content-inner-1:target #content-inner {
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
-    margin-left: 0px;
-}
-
-#content-inner-2:target #content-inner {
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
-    margin-left: -445px;
-}
-
-#content-inner-3:target #content-inner {
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
-    margin-left: -890px;
-}
-
 
 .slider-nav {
     padding: 24px 0;
@@ -519,18 +501,6 @@ Lato Light +
     justify-content: space-between;
     align-items: center;
     padding: 80px 0 90px 0;
-    position: relative;
-    background: url(../image/arrow.png) 22% 15% no-repeat,
-                url(../image/arrow.png) 78% 15% no-repeat;
-}
-
-.step-item-wrap::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../image/arrow.png) 50% 63% no-repeat;
-    transform: rotate(180deg);
 }
 
 .step-item {
@@ -540,6 +510,27 @@ Lato Light +
     align-items: center;
     padding: 0 40px;
     text-align: center;
+    position: relative;
+}
+
+.step-item::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 78%;
+    top: -10%;
+    background: url(../image/arrow.png) no-repeat;
+}
+
+.step-item:nth-child(even)::after {
+    left: 72%;
+    top: -15%;
+    transform: rotate(180deg);
+}
+
+.step-item:last-child::after {
+    display: none;
 }
 
 .step-icon {
@@ -631,9 +622,10 @@ Lato Light +
 }
 
 .client-text::after {
-    content: "\201D";
-    bottom: -12px;
-    left: 60%;
+    content: "\201C";
+    bottom: -17px;
+    right: -17px;
+    transform: scale(-1, 1);
 }
 
 .client-name {
